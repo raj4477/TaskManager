@@ -66,10 +66,14 @@ class _TaskWidgetState extends State<TaskWidget> {
                   }
                 )
               ,
+              subtitle:Text(
+            "Created At-${DateFormat('hh:mm a').format(widget.task.createdAt)}",
+            style: TextStyle(fontSize: 14, color: Colors.grey),),
           trailing: Text(
-            DateFormat('hh:mm a').format(widget.task.createdAt),
-            style: TextStyle(fontSize: 14, color: Colors.grey),
-          )),
+            DateFormat('hh:mm a').format(widget.task.toComeleteUpto),
+            style: TextStyle(fontSize: 14, color: Colors.grey),),
+            
+          ),
     );
   }
 }

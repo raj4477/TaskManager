@@ -53,6 +53,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           appBarTheme: AppBarTheme(
               elevation: 0.0,
+              // color: Colors.white,
               backgroundColor: Colors.white,
               iconTheme: IconThemeData(color: Colors.black))),
       home: HomeView(),
